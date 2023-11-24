@@ -1,1 +1,31 @@
 // Specific CSS for your home-page
+h1{
+  font-size: 60px;
+  font-family: 'Vina Sans', sans-serif;
+
+}
+
+.vert {
+  background-color: #9FE870;
+}
+
+a {
+  color: black;
+}
+
+.quarter-screen {
+  height: 100%;
+  width: 800px;
+  background-color: #fff;
+  padding: 16px;
+  margin-bottom: 15px;
+  margin-left: 13px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.line {
+  border-top: 1px solid #939393;
+  margin: 16px;
+
+}

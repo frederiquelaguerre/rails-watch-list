@@ -1,0 +1,21 @@
+.btn-primar {
+  background-color: $green;
+  padding: 12px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #163300;
+  transition: background-color 0.7s ease-in-out;
+  &:hover {
+    background-color: rgb(107, 209, 87);
+  }
+ }
+
+ .btn-red {
+  font-size: 14px;
+  color: red;
+  text-decoration: none;
+  transition: color 0.7s ease-in-out;
+  &:hover {
+    color: rgb(234, 101, 101);
+  }
+ }
