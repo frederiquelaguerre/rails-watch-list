@@ -1,15 +1,16 @@
 <%= render "form", list: @list %>
 
 <div class="container">
-  <div class="text-center m-3">
+  <div class="text-center p-3 m-3">
     <h1>The best lists for you</h1>
     <p>Des milliers de possibilités, des milliers de listes pour vos films favoris</p>
-    <%= link_to "Add a new list", new_list_path , class:"btn-primar m-4" %>
+    <br>
+    <%= link_to "Add a new list", new_list_path , class:"btn-primar" %>
   </div>
-  </div>
+</div>
 <div class="vert">
-  <div class="container">
-    <div class="cards mt-5">
+
+    <div class="cards">
       <% @lists.each do |list|%>
         <div>
           <% if list.photo.attached? %>
@@ -17,12 +18,12 @@
               <li class="list-group-item"> <%= link_to list.name, list_path(list), class:'text-decoration-none' %> </li>
             </div>
           <% else  %>
-                <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=1718&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+            <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=1718&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
               <li class="list-group-item"> <%= link_to list.name, list_path(list), class:'text-decoration-none' %> </li>
             </div>
           <% end %>
         </div>
       <% end %>
     </div>
-  </div>
+
 </div>

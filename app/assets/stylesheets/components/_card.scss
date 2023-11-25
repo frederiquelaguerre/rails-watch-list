@@ -1,17 +1,27 @@
+// .cards {
+//   flex-grow: 1;
+//   display: grid;
+//   grid-template-columns: 1fr 1fr 1fr 1fr;
+//   grid-gap: 16px;
+//   padding: 16px;
+//   overflow-x: auto
+// }
+
+
+
 .cards {
   flex-grow: 1;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 16px;
-  padding: 16px;
+  display: flex;
+  overflow-x: auto;
 }
-
-
 
 .card-category {
   background-size: cover;
   background-position: center;
-  height: 180px;
+  width: 25%; /* Chaque carte prendra 25% de la largeur */
+  min-width: 200px; /* Ajustez la largeur minimale selon vos besoins */
+  margin-right: 16px; /* Espacement entre les cartes */
+  height: 188px;
   display: flex;
   justify-content: center;
   align-items: center;
